@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Language Loop</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- p5.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>INFINITE LOOP</h1>
+    <p class="subtitle">An experiment in linguistic mutation.</p>
+
+    <section class="input-section">
+      <label>ORIGINAL TEXT</label>
+
+      <textarea
+        id="userInput"
+        placeholder="Enter your sentence here..."
+      ></textarea>
+
+      <button id="startButton">START EXPERIMENT</button>
+    </section>
+
+    <div class="status">
+      ROUND: <span id="roundCount">0</span>
+    </div>
+
+    <section id="history"></section>
+
+    <button id="generateButton" disabled>
+      GENERATE NEXT ROUND →
+    </button>
+
+    <button id="resetButton" class="reset-button">
+      RESET
+    </button>
+
+    <p id="message"></p>
+
+  </main>
+
+  <script src="sketch.js"></script>
+
+</body>
+</html>
