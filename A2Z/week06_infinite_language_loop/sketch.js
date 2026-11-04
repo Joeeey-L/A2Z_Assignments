@@ -47,7 +47,7 @@ async function generateNext() {
   try {
     // Send text to Ollama
     const response = await fetch(
-      "https://unlike-wrap-wiki-bumper.trycloudflare.com/api/generate",
+      "http://127.0.0.1:11434/api/generate",
       {
         method: "POST",
 
